@@ -1,0 +1,190 @@
+[2018-06-22T17:14:29.667] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:76)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:18)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-22T17:18:39.940] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:76)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:18)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-22T19:09:19.760] [ERROR] cheese - ReferenceError: ranjayzheng is not defined
+    at UserRouter.insertBuildLog (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:79:19)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-compose\index.js:42:32)
+    at F:\workspaces\gitweb-spa\node_modules\koa-compose\index.js:34:12
+[2018-06-22T19:22:17.505] [ERROR] cheese - TypeError: this.connect2db(...).db is not a function
+    at UserService.insertBuildLog (F:\workspaces\gitweb-spa\dist\services\UserService.js:185:44)
+    at UserRouter.insertBuildLog (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:84:43)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-compose\index.js:42:32)
+[2018-06-22T20:10:27.110] [ERROR] cheese - { MongoError: collection name must be a String
+    at checkCollectionName (F:\workspaces\gitweb-spa\node_modules\mongodb\lib\utils.js:99:11)
+    at new Collection (F:\workspaces\gitweb-spa\node_modules\mongodb\lib\collection.js:63:3)
+    at Db.collection (F:\workspaces\gitweb-spa\node_modules\mongodb\lib\db.js:430:24)
+    at Promise (F:\workspaces\gitweb-spa\dist\services\UserService.js:180:31)
+    at new Promise (<anonymous>)
+    at UserService.getBuildLog (F:\workspaces\gitweb-spa\dist\services\UserService.js:179:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+  name: 'MongoError',
+  message: 'collection name must be a String' }
+[2018-06-22T20:17:25.244] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:84)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:24)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-23T11:14:49.822] [ERROR] cheese - { Error: ENOENT: no such file or directory, open 'F:\workspaces\gitweb-spa\dist\assets\index.html'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at IndexRouter.getIndex (F:\workspaces\gitweb-spa\dist\routers\IndexRouter.js:57:33)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:351:31)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\workspaces\\gitweb-spa\\dist\\assets\\index.html' }
+[2018-06-23T11:14:49.957] [ERROR] cheese - { Error: ENOENT: no such file or directory, open 'F:\workspaces\gitweb-spa\dist\assets\index.html'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at IndexRouter.getIndex (F:\workspaces\gitweb-spa\dist\routers\IndexRouter.js:57:33)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:351:31)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\workspaces\\gitweb-spa\\dist\\assets\\index.html' }
+[2018-06-23T11:16:17.504] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:84)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:24)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-23T11:17:48.416] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:84)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:24)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-23T11:17:59.600] [ERROR] cheese - { MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\topologies\server.js:505:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\connection\pool.js:329:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\connection\connection.js:245:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+  name: 'MongoNetworkError',
+  message: 'failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]' }
+[2018-06-23T11:18:12.260] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:84)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:24)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-23T11:20:54.589] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:84)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:24)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-23T11:22:48.706] [ERROR] services - TypeError: Cannot read property 'has' of undefined
+    at diffResult.replace (F:\workspaces\gitweb-spa\dist\services\UserService.js:100:84)
+    at RegExp.[Symbol.replace] (<anonymous>)
+    at String.replace (<anonymous>)
+    at UserService.pullBranch (F:\workspaces\gitweb-spa\dist\services\UserService.js:99:24)
+    at UserRouter.pullBranch (F:\workspaces\gitweb-spa\dist\routers\UserRouters.js:65:37)
+    at memberInvoker (F:\workspaces\gitweb-spa\node_modules\awilix-koa\lib\invokers.js:80:45)
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspaces\gitweb-spa\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\workspaces\gitweb-spa\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+[2018-06-23T11:22:53.392] [ERROR] cheese - { MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\topologies\server.js:505:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\connection\pool.js:329:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\connection\connection.js:245:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+  name: 'MongoNetworkError',
+  message: 'failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]' }
+[2018-06-23T14:45:43.353] [ERROR] cheese - { MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\topologies\server.js:505:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\connection\pool.js:329:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (F:\workspaces\gitweb-spa\node_modules\mongodb-core\lib\connection\connection.js:245:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+  name: 'MongoNetworkError',
+  message: 'failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]' }
