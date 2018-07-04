@@ -5,6 +5,7 @@
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const postcssPresetEnv = require('postcss-preset-env')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
@@ -102,6 +103,11 @@ let generalConfig = {
   plugins: [
     // make sure to include the plugin for the magic
     new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'src/client/index.html',
+      filename: 'index.html',
+      inject: false
+    }),
     new MiniCssExtractPlugin({
       filename: 'styles/[name]-[hash:5].css',
       chunkFilename: "styles/[id]-[hash:5].css"
