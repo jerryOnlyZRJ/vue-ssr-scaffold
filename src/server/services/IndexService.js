@@ -1,49 +1,44 @@
-/**
- * @description index数据拉取模块
- * @author Jerry
- */
+ import {
+ 	createBundleRenderer
+ } from 'vue-server-renderer';
+ import fs from "fs"
+ import path from "path"
+ import LRU from 'lru-cache'
+ export default class IndexService {
+ 	constructor() {}
+ 	async init(ctx) {
+ 		path.join(__dirname, )
+ 		const serverBundle = require(path.join(__dirname, '../assets/vue-ssr-server-bundle.json'));
+ 		const clientManifest = require(path.join(__dirname, '../assets/vue-ssr-client-manifest.json'));
+ 		const template = fs.readFileSync(path.join(__dirname, '../assets/index.html'), 'utf-8');
+ 		const context = {
+ 			url: ctx.url
+ 		};
+ 		const ssrrender = this.createRenderer(serverBundle, template, clientManifest);
 
-//数据初始化
-import shell from 'shelljs'
-const successMessage = {
-  success: true,
-  message: "success"
-};
-const failMessage = {
-  success: false,
-  message: "failed"
-};
-
-/**
- * IndexModel类
- * @type {Class}
- */
-class UserService {
-  constructor() {
-
-  }
-  /**
-   * 拉取分支列表
-   * @return {Array} 
-   */
-  getBranchList() {
-    //TODOS: 判断冲突
-    const result = shell.exec("git branch -r");
-    let resultArr = result.stdout.split('\n  ')
-    const len = resultArr.length
-    resultArr[0] = resultArr[0].slice(2, resultArr[0].length)
-    resultArr[len - 1] = resultArr[len - 1].slice(0, resultArr[len - 1].length - 1)
-    return resultArr
-  }
-  /**
-   * pull选中分支
-   * @return {Object} 
-   */
-  pullBranch(origin, branch) {
-    shell.exec(`git pull ${origin} ${branch}:${branch}`)
-    shell.exec(`git checkout ${branch}`)
-    return successMessage
-  }
-}
-
-export default UserService
+ 		function createSSRStreamPromise() {
+ 			return new Promise((resolve, reject) => {
+ 				if (!ssrrender) {
+ 					return ctx.body = 'waiting for compilation.. refresh in a moment.'
+ 				}
+ 				const ssrStream = ssrrender.renderToStream(context);
+ 				ctx.status = 200;
+ 				ctx.type = 'html';
+ 				ssrStream.on('error', err => {
+ 					reject(err)
+ 				}).pipe(ctx.res);
+ 			});
+ 		}
+ 		await createSSRStreamPromise(context);
+ 	}
+ 	createRenderer(serverbundle, template, clientManifest) {
+ 		return createBundleRenderer(serverbundle, {
+ 			cache: LRU({
+ 				max: 10000
+ 			}),
+ 			runInNewContext: false,
+ 			template,
+ 			clientManifest
+ 		});
+ 	}
+ }

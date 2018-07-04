@@ -1,2 +1,8 @@
 #node_modules
 node_modules/
+#MAC
+.DS_Store
+#logs
+dist/logs
+#test coverage
+docs/coverage

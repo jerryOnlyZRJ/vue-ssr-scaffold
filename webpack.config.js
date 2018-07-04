@@ -48,7 +48,7 @@ let generalConfig = {
   resolve: {
     extensions: [".js", ".css", ".vue"]
   },
-  watch: !_modeflag,
+  watch: false,
   watchOptions: {
     ignored: /node_modules/,
     aggregateTimeout: 300,
@@ -95,7 +95,7 @@ let generalConfig = {
       use: [{
         loader: 'file-loader',
         options: {
-          name: 'images/[name].[ext]'
+          name: _modeflag ? 'images/[name]-[hash:5].[ext]' : 'images/[name].[ext]'
         }
       }]
     }]

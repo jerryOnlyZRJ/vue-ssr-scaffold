@@ -8,7 +8,9 @@
 		"client:dev": "webpack --mode development",
 		"client:prod": "webpack --mode production",
 		"client:server": "webpack --mode development --env server",
-		"server": "gulp"
+		"client:ssr": "npm run client:dev && npm run client:server",
+		"server": "gulp",
+		"start:dev": "supervisor dist/app.js"
 	},
 	"author": "Ranjay Zheng",
 	"license": "ISC",
@@ -35,6 +37,7 @@
 		"postcss-loader": "^2.1.5",
 		"postcss-preset-env": "^5.1.0",
 		"pump": "^3.0.0",
+		"supervisor": "^0.12.0",
 		"uglifyjs-webpack-plugin": "^1.2.5",
 		"vue-loader": "^15.2.4",
 		"vue-style-loader": "^4.1.0",

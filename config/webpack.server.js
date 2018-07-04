@@ -7,4 +7,7 @@ module.exports = {
 	output: {
 		libraryTarget: 'commonjs2'
 	},
+	plugins: [
+		new vueSSRServerPlugin()
+	],
 }

@@ -1,7 +1,6 @@
 <template>
   <div class="helloworld">
     <h1>Hello World!</h1>
-    <img src="../../assets/images/nmkv.jpg">
   </div>
 </template>
 
@@ -13,8 +12,7 @@ export default {
 
 <style>
   .helloworld {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   margin: 1rem 0 2rem;
+   color: var(--mainColor);
   }
 </style>
