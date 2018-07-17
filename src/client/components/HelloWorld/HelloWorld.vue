@@ -11,8 +11,8 @@ export default {
 </script>
 
 <style>
-  .helloworld {
+.helloworld {
    margin: 1rem 0 2rem;
    color: var(--mainColor);
-  }
+}
 </style>

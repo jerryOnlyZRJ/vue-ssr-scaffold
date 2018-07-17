@@ -2,7 +2,9 @@
   <div id="app">
     <div class="main">
       <h1>Welcome to N.MKV!</h1>
-      <img src="./assets/images/nmkv.jpg">
+      <figure>
+        <img class="picture-logo" src="./assets/images/nmkv.jpg">
+      </figure>
       <router-view></router-view>
       <p>
         <router-link to="/">Go to Index</router-link>
@@ -45,5 +47,18 @@ a {
   align-items: center;
   height: 100vh;
 }
-
+.picture-logo {
+  width: 80%;
+  max-width: 534px;
+}
+@media (max-width: 50rem) {
+  a {
+    display: block;
+    padding: 1rem;
+    border: 2px solid #188eee;
+    border-radius: 2rem;
+    color: #188eee;
+    font-weight: bold;
+  }
+}
 </style>

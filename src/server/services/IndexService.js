@@ -16,7 +16,7 @@
  		};
  		const ssrrender = this.createRenderer(serverBundle, template, clientManifest);
 
- 		function createSSRStreamPromise() {
+ 		function createSSRStreamPromise(context) {
  			return new Promise((resolve, reject) => {
  				if (!ssrrender) {
  					return ctx.body = 'waiting for compilation.. refresh in a moment.'

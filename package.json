@@ -7,8 +7,10 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"client:dev": "webpack --mode development",
 		"client:prod": "webpack --mode production",
-		"client:server": "webpack --mode development --env server",
-		"client:ssr": "npm run client:dev && npm run client:server",
+		"client:server-dev": "webpack --mode development --env server",
+		"client:server-prod": "webpack --mode production --env server",
+		"client:ssr-dev": "npm run client:dev && npm run client:server-dev",
+		"client:ssr-prod": "npm run client:prod && npm run client:server-prod",
 		"server": "gulp",
 		"start:dev": "supervisor dist/app.js"
 	},
