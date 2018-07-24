@@ -12,9 +12,11 @@ export default context => {
 		router.push(context.url);
 		router.onReady(() => {
 			const matchCompents = router.getMatchedComponents();
-			Promise.all(matchCompents.map((Component) => {
-				if (Component.asyncData) {
-					return Component.asyncData({
+			Promise.all(matchCompents.map(({
+				asyncData
+			}) => {
+				if (asyncData) {
+					return asyncData({
 						store
 					})
 				}
