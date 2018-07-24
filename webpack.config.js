@@ -9,6 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const argv = require('yargs-parser')(process.argv.slice(2));
 const merge = require('webpack-merge');
@@ -16,9 +17,14 @@ const _mode = argv.mode || "development";
 let _mergeConfig = "";
 if (argv.env == "server") {
   _mergeConfig = require(`./config/webpack.server.js`);
+  _mergeConfig.plugins.push(new CleanWebpackPlugin(['dist/assets/vue-ssr-server-bundle.json'], {
+    root: __dirname,
+    verbose: true,
+    dry: false
+  }))
 } else {
   _mergeConfig = require(`./config/webpack.${_mode}.js`);
-  _mergeConfig.plugins.push(new CleanWebpackPlugin(['dist/assets/scripts', 'dist/assets/styles'], {
+  _mergeConfig.plugins.push(new CleanWebpackPlugin(['dist/assets/scripts', 'dist/assets/styles', 'dist/assets/images', 'dist/assets/vue-ssr-client-manifest.json'], {
     root: __dirname,
     verbose: true,
     dry: false
@@ -45,7 +51,10 @@ let generalConfig = {
     ]
   },
   resolve: {
-    extensions: [".js", ".css", ".vue"]
+    extensions: [".js", ".css", ".vue"],
+    alias: {
+      '@': path.resolve('src')
+    }
   },
   watch: false,
   watchOptions: {
@@ -89,7 +98,7 @@ let generalConfig = {
       use: [{
         loader: 'file-loader',
         options: {
-          name: 'images/[name].[ext]'
+          name: _modeflag ? 'images/[name]-[hash:5].[ext]' : 'images/[name].[ext]'
         }
       }]
     }]
@@ -105,7 +114,11 @@ let generalConfig = {
     new MiniCssExtractPlugin({
       filename: 'styles/[name]-[hash:5].css',
       chunkFilename: "styles/[id]-[hash:5].css"
-    })
+    }),
+    new CopyWebpackPlugin([{
+      from: path.join(__dirname, 'favicon.ico'),
+      to: path.join(__dirname, '/dist/assets/images')
+    }])
   ]
 }
 
