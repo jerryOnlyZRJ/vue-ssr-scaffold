@@ -16,6 +16,7 @@ export default context => {
 				asyncData
 			}) => {
 				if (asyncData) {
+					// 在node中拿到每个**路由组件**的asyncData并执行
 					return asyncData({
 						store,
 						router: router.currentRoute

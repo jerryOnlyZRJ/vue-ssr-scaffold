@@ -4,6 +4,7 @@
  */
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+// vue-ssr与该插件不兼容，正在寻找解决方案
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
