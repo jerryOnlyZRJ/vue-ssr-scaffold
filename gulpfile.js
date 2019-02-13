@@ -7,7 +7,7 @@ gulp.task('build', cb => {
 			gulp.src(['src/server/**/*.js', 'src/server/app.js']), // '**'指所有文件夹，'*'指所有文件
 			babel({
 				babelrc: false,
-				'plugins': ['transform-es2015-modules-commonjs', "transform-decorators-legacy"]
+				'plugins': ['@babel/plugin-transform-modules-commonjs', "@babel/plugin-proposal-decorators"]
 			}),
 			gulp.dest('dist')
 		],

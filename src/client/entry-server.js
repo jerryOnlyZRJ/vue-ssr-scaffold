@@ -17,7 +17,8 @@ export default context => {
 			}) => {
 				if (asyncData) {
 					return asyncData({
-						store
+						store,
+						router: router.currentRoute
 					})
 				}
 			})).then(() => {

@@ -10,7 +10,7 @@ import LRU from 'lru-cache'
 
 @route('/')
 @route('/helloworld')
-export default class IndexRouter {
+class IndexRouter {
     constructor({
         indexService
     }) {
@@ -23,3 +23,5 @@ export default class IndexRouter {
     }
 
 }
+
+export default IndexRouter

@@ -3,9 +3,11 @@
     <div class="main">
       <h1>Welcome to N.MKV!</h1>
       <figure>
-        <img class="picture-logo" src="./assets/images/nmkv.jpg">
+        <img 
+          class="picture-logo" 
+          src="./assets/images/nmkv.jpg">
       </figure>
-      <router-view></router-view>
+      <router-view/>
       <p>
         <router-link to="/">Go to Index</router-link>
         <router-link to="/helloworld">Go to HelloWorld</router-link>
@@ -16,7 +18,7 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'App'
 }
 </script>
 

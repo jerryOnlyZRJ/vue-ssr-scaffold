@@ -6,10 +6,12 @@ import {
 import {
 	createStore
 } from './store'
+import { sync } from 'vuex-router-sync'
 
 export function createApp() {
 	const router = createRouter()
 	const store = createStore()
+	sync(store, router)
 	const app = new Vue({
 		store,
 		router,
