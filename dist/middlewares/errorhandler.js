@@ -1,16 +1,13 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _log4js = require('log4js');
+var _log4js = _interopRequireDefault(require("log4js"));
 
-var _log4js2 = _interopRequireDefault(_log4js);
-
-var _config = require('../config');
-
-var _config2 = _interopRequireDefault(_config);
+var _config = _interopRequireDefault(require("../config"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18,7 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @description 容错机制中间件
  * @author Ranjay
  */
-_log4js2.default.configure({
+_log4js.default.configure({
   // log输出文件配置
   appenders: {
     cheese: {
@@ -34,12 +31,14 @@ _log4js2.default.configure({
     }
   }
 });
-const logger = _log4js2.default.getLogger('cheese');
 
+const logger = _log4js.default.getLogger('cheese');
 /**
  * 容错处理对象
  * @type {Object}
  */
+
+
 const errorHandler = {
   /**
    * 错误处理句柄
@@ -65,5 +64,7 @@ const errorHandler = {
       ctx.body = await ctx.render('404');
     });
   }
+
 };
-exports.default = errorHandler;
+var _default = errorHandler;
+exports.default = _default;

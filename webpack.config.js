@@ -39,7 +39,8 @@ let generalConfig = {
   output: {
     path: path.join(__dirname, './dist/assets'),
     publicPath: '/',
-    filename: 'scripts/[name].bundle.js'
+    filename: 'scripts/[name].bundle.js',
+    chunkFilename: "scripts/[name].chunk.js"
   },
   optimization: {
     minimizer: [

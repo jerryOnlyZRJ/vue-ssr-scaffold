@@ -4,10 +4,20 @@
  import fs from "fs"
  import path from "path"
  import LRU from 'lru-cache'
+ import {
+	JSDOM
+} from 'jsdom'
+
+const dom = new JSDOM('<!doctype html><html><body></body></html>', {
+	url: 'http://localhost'
+})
+global.window = dom.window
+global.document = window.document
+global.navigator = window.navigator
+
  export default class IndexService {
  	constructor() {}
  	async init(ctx) {
- 		path.join(__dirname, )
  		const serverBundle = require(path.join(__dirname, '../assets/vue-ssr-server-bundle.json'));
  		const clientManifest = require(path.join(__dirname, '../assets/vue-ssr-client-manifest.json'));
  		const template = fs.readFileSync(path.join(__dirname, '../assets/index.html'), 'utf-8');

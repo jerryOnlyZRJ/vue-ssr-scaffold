@@ -8,7 +8,7 @@ export function createRouter() {
 		mode: 'history',
 		routes: [{
 			path: '/helloworld',
-			component: () => import('../components/HelloWorld/HelloWorld')
+			component: () => import(/* webpackChunkName: "helloworld" */'../components/HelloWorld/HelloWorld')
 		}]
 	})
 }

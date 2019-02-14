@@ -1,0 +1,72 @@
+[2019-02-14T11:05:26.872] [ERROR] cheese - { Error: Cannot find module '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/assets/vue-ssr-server-bundle.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at IndexService.init (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/services/IndexService.js:31:26)
+    at IndexRouter.getIndex (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/routers/IndexRouter.js:30:29)
+    at memberInvoker (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/awilix-koa/lib/invokers.js:80:45)
+    at dispatch (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/koa-router/lib/router.js:346:16 code: 'MODULE_NOT_FOUND' }
+[2019-02-14T11:05:27.253] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }
+[2019-02-14T14:47:45.835] [ERROR] cheese - AwilixResolutionError: Could not resolve 'userService'.
+
+Resolution path: userService
+    at resolve (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/awilix/lib/container.js:226:23)
+    at Object.get (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/awilix/lib/container.js:63:32)
+    at new UserRouter (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/routers/UserRouters.js:16:5)
+    at newClass (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/awilix/lib/resolvers.js:85:24)
+    at Object.resolve (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/awilix/lib/resolvers.js:291:20)
+    at Object.build (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/awilix/lib/container.js:292:37)
+    at memberInvoker (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/awilix-koa/lib/invokers.js:79:38)
+    at dispatch (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/node_modules/koa-router/lib/router.js:346:16
+[2019-02-14T14:47:46.239] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }
+[2019-02-14T14:48:32.348] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }
+[2019-02-14T14:48:42.135] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }
+[2019-02-14T14:48:42.558] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }
+[2019-02-14T14:49:37.639] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }
+[2019-02-14T14:49:38.017] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }
+[2019-02-14T14:50:02.808] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/Users/ranjayzheng/Desktop/workspace/vue-ssr-scaffold/dist/views/404.html' }

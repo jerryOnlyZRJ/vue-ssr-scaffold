@@ -1,5 +1,3 @@
-import request from "axios"
+const getters = {}
 
-const actions = {}
-
-export default actions
+export default getters
